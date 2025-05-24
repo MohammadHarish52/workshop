@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in Html</title>
+    <script>
+      function onSubmit(e) {
+        e.preventDefault(); // Prevent the default form submission
+        const name = document.getElementById("name").value;
+        alert(`Hello, ${name}!`);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Forms in HTML</h1>
+    <p>Forms are used to collect user input.</p>
+    <form onsubmit="onSubmit(e)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
