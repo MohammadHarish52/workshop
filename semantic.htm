@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic tags</title>
+    <script>      function calculateYear() {
+        const date = new Date();
+        const year = date.getFullYear();
+        return `${year}`;
+      }
+
+      window.onload = function () {
+        document.getElementById("currentDate").textContent = calculateYear();
+      };
+    </script>
+  </head>
+  <body>
+    <navbar>
+      <header>
+        <h1>Semantic HTML</h1>
+        <p>Semantic HTML is a way of writing HTML that uses meaningful tags.</p>
+      </header>
+
+      <section>
+        <h2>What is Semantic HTML?</h2>
+        <p>Semantic HTML is a way of writing HTML that uses meaningful tags.</p>
+        <p>
+          It helps search engines and browsers understand the content of a web
+          page.
+        </p>
+      </section>
+
+      <footer on>
+        <p>&copy; <span id="currentDate"></span> Semantic HTML</p>
+      </footer>
+    </navbar>
+  </body>
+</html>
